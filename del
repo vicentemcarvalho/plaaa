@@ -1,0 +1,34 @@
+   ssh-keygen -t ed1 -C "vicente.mcarvalho@gmail.com"
+   cat .ssh/id_ed1.pub 
+   eval "$(ssh-agent -s)"
+   ssh-add .ssh/id_ed1
+ 
+   cd Documentos/IFPI/0/o\ Info\ B/Introducao\ Prog\ Web/github/cv/
+
+
+
+   echo "# plaaa" >> README.md
+   
+   git init
+   git add README.md 
+   git commit -m "commit inicial..."
+   git config --global user.email "vicente.mcarvalho@gmail.com"
+   git config --global user.name "Vicente Carvalho"
+   git commit -m "commit inicial..."
+   git branch -M main
+   git remote add origin git@github.com:vicentemcarvalho/plaaa.git 
+   git push -u origin main
+   git status
+   
+   git add index.html 
+   git status
+   git push -u origin main
+   git commit
+   git commit -m "index.html template"
+   git push -u origin main
+   git push -u origin master
+   git status
+   git commit -m "alteracao titulo"
+   git status
+   less index.html 
+   git push -u origin master
