@@ -1,0 +1,13 @@
+div {
+    border-style: dashed;
+    border-width: 3px;
+    border-color: darkblue;
+}
+
+.espacamento_25 {
+    padding: 25px;
+}
+
+.margem_12 {
+    margin: 120px;
+}
